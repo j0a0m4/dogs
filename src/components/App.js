@@ -4,12 +4,12 @@ import { Switch, Route } from 'react-router'
 import { Dogs } from './Dogs'
 import { dogs } from '../dogs'
 import { DogDetail } from './DogDetail'
-import { Navbar } from './Navbar'
+import DogNavbar from './DogNavbar'
 
 function App() {
 	return (
 		<div className="App">
-			<Navbar dogs={dogs} />
+			<DogNavbar dogs={dogs} />
 			<Switch>
 				<Route
 					exact
